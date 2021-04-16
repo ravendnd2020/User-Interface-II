@@ -1,1 +1,129 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 44px;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 480px;
+	margin-right: 480px;
+	background-color: #484030;
+	font-size: 20px;
+	border: 3px double black;
+	height: 30px;
+	border-radius: 5px;
+	padding: 2px 15px 2px 15px;
+	width: 30%;
+	position: relative;
+	right: 30px;
+
+}
+header{
+	width: 80%;
+	position: relative;
+	left:10%;
+	top: 10px;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 50px;
+}
+body {
+	background-color: #132237;
+	color: white;
+	font-family: 'Zen Dots', cursive;
+}
+.bigpic{
+	height: 200px;
+	margin-right: 1200px;
+	position: relative;
+	left: 60px;
+	margin-left: -20px;
+	
+}
+.para{
+	width: 20%;
+	height: 100%;
+	text-align: center;	
+	position: relative;
+	left: 1000px;
+	top: 350px;
+}
+section {
+	display: flex;
+	align-content: row;
+	justify-content: space-around;
+	position: relative;
+	top: 75px;
+}
+article {
+	width: 150px;
+	height: 500px;
+	padding: 10px;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	position: relative;
+	top: 60px;
+	background-color: #132237;
+	border: 2px solid white;
+}
+button {
+	height: 35px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+
+	border-radius: 5px;
+	background-color: #132237;
+	color: white;
+	border: 1px white double;
+}
+a {
+	border: 1px double black;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+	padding-left: 10px;
+	text-decoration: none;
+	color: white;
+	padding: right: 4px;
+}
+#home {
+	border-left: none;
+}
+#picts{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0px;
+	}
+.one {
+	height: 500px;
+	width: 150px;
+}
+.two {
+	height: 500px;
+	width: 150px;
+}
+.three {
+	height: 500px;
+	width: 150px;
+}
+.four {
+	height: 500px;
+	width: 150px;
+}
+#side {
+	width: 30%;
+	position: relative;
+	top: 150px;
+}
+img {
+	border: double 2px white;
+	border-radius: 2%;
+}
