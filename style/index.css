@@ -1,129 +1,238 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
 
-h1 {
-	font-weight: bold;
-	text-align: center;
-	font-size: 44px;
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
-nav {
-	display: flex;
-	justify-content: space-around;
-	margin-left: 480px;
-	margin-right: 480px;
-	background-color: #484030;
-	font-size: 20px;
-	border: 3px double black;
-	height: 30px;
-	border-radius: 5px;
-	padding: 2px 15px 2px 15px;
-	width: 30%;
-	position: relative;
-	right: 30px;
 
-}
-header{
-	width: 80%;
-	position: relative;
-	left:10%;
-	top: 10px;
-	text-align: center;
-	padding-top: 10px;
-	margin-bottom: 50px;
-}
 body {
-	background-color: #132237;
-	color: white;
-	font-family: 'Zen Dots', cursive;
-}
-.bigpic{
-	height: 200px;
-	margin-right: 1200px;
-	position: relative;
-	left: 60px;
-	margin-left: -20px;
-	
-}
-.para{
-	width: 20%;
-	height: 100%;
-	text-align: center;	
-	position: relative;
-	left: 1000px;
-	top: 350px;
-}
-section {
-	display: flex;
-	align-content: row;
-	justify-content: space-around;
-	position: relative;
-	top: 75px;
-}
-article {
-	width: 150px;
-	height: 500px;
-	padding: 10px;
+    line-height:1;
 }
 
-footer{
-	display: flex;
-	justify-content: center;
-	height: 100px;
-	position: relative;
-	top: 60px;
-	background-color: #132237;
-	border: 2px solid white;
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
 }
-button {
-	height: 35px;
-	width: 100px;
-	display: flex;
-	justify-content: center;
 
-	border-radius: 5px;
-	background-color: #132237;
-	color: white;
-	border: 1px white double;
+nav ul {
+    list-style:none;
 }
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
 a {
-	border: 1px double black;
-	border-top: none;
-	border-bottom: none;
-	border-right: none;
-	padding-left: 10px;
-	text-decoration: none;
-	color: white;
-	padding: right: 4px;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
 }
-#home {
-	border-left: none;
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
 }
-#picts{
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 0px;
-	}
-.one {
-	height: 500px;
-	width: 150px;
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
 }
-.two {
-	height: 500px;
-	width: 150px;
+
+del {
+    text-decoration: line-through;
 }
-.three {
-	height: 500px;
-	width: 150px;
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
 }
-.four {
-	height: 500px;
-	width: 150px;
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
 }
-#side {
-	width: 30%;
-	position: relative;
-	top: 150px;
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
 }
-img {
-	border: double 2px white;
-	border-radius: 2%;
+
+input, select {
+    vertical-align:middle;
 }
+
+/*Actual Code Below*/
+
+body {
+    max-width: 100%;
+}
+.navbar{
+    background-color: grey;
+    border-bottom: dashed 1px black;
+}
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding: 5px 15px 5px 15px;
+        margin: -2px;
+        font-size: 18px;
+        color: black;
+        border: 1px double black;
+    }
+
+
+
+.toprow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+  .largeimg{
+      width: 50%;
+  }
+  .largeimg img {
+      width: 100%;
+      height: 30vw;
+      margin: 5%;
+  }
+
+    .textblock {
+        max-width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+
+
+
+.firstimgrow {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+
+
+.secondimgrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#btmbutton {
+    width: 10%;
+}
+
+
+@media(max-width: 800px){
+    .firstimgrow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .secondimgrow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .toprow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .textblock {
+        width: 75%;
+    }
+   .navbar {
+       display: flex;
+       align-items: center;
+       flex-flow: column wrap;
+   }
+    
+}
+    
+
+    @media(max-width: 500px){
+        .firstimgrow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .secondimgrow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    
