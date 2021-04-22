@@ -1,1 +1,238 @@
-/* Add CSS styling here */
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*Actual Code Below*/
+
+body {
+    max-width: 100%;
+}
+.navbar{
+    background-color: grey;
+    border-bottom: dashed 1px black;
+}
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding: 5px 15px 5px 15px;
+        margin: -2px;
+        font-size: 18px;
+        color: black;
+        border: 1px double black;
+    }
+
+
+
+.toprow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+  .largeimg{
+      width: 50%;
+  }
+  .largeimg img {
+      width: 100%;
+      height: 30vw;
+      margin: 5%;
+  }
+
+    .textblock {
+        max-width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+
+
+
+.firstimgrow {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+
+
+.secondimgrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+
+
+
+
+.footer {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#btmbutton {
+    width: 10%;
+}
+
+
+@media(max-width: 800px){
+    .firstimgrow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .secondimgrow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .toprow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .textblock {
+        width: 75%;
+    }
+   .navbar {
+       display: flex;
+       align-items: center;
+       flex-flow: column wrap;
+   }
+    
+}
+    
+
+    @media(max-width: 500px){
+        .firstimgrow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .secondimgrow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+    }
+
+    
